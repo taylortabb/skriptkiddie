@@ -7,8 +7,12 @@
     transform: rotateY(180deg);
   }
 
+    .flip-container:active .flipper, .flip-container.active .flipper {
+    transform: rotateY(180deg);
+  }
+
 .flip-container, .front, .back {
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
 }
 
