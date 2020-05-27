@@ -11,6 +11,12 @@
   --x-speed2: 7s;
   --y-speed2: 6s;
   --transition-speed2: 2.2s;
+
+  --width3: 265px;
+  --height3: 25px;
+  --x-speed3: 2s;
+  --y-speed3: 7s;
+  --transition-speed3: 2.2s;
 }
 
 .el1 { 
@@ -111,6 +117,57 @@
   animation-play-state: paused;
 }
 .swing2:hover {
+  animation-play-state: paused;
+}
+
+/*STRAIGHT2SPAM*/
+
+.el3 { 
+  width: var(--width2);
+  height: var(--height2);
+}
+
+.x3 {
+  animation: x3 var(--x-speed3) linear infinite alternate;
+}
+.y3 {
+  animation: y3 var(--y-speed3) linear infinite alternate;
+}
+
+@keyframes x3 {
+  100% {
+    transform: translateX(calc(100vw - var(--width3)));
+  }
+}
+@keyframes y3 {
+  100% {
+    transform: translateY(calc(100vh - var(--height3)));
+  }
+}
+
+.swing3 {
+    animation: swing3 ease-in-out 2s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(32,32,62);
+    color: white;
+    font-size: 2.4rem;
+}
+ 
+@keyframes swing3 {
+    0% { transform: rotate(4deg); }
+    100% { transform: rotate(-4deg); }
+}
+
+.x3:hover {
+  animation-play-state: paused;
+}
+.y3:hover {
+  animation-play-state: paused;
+}
+.swing3:hover {
   animation-play-state: paused;
 }
 
