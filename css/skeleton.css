@@ -17,6 +17,12 @@
   --x-speed3: 2s;
   --y-speed3: 7s;
   --transition-speed3: 2.2s;
+
+  --width4: 265px;
+  --height4: 25px;
+  --x-speed4: 7s;
+  --y-speed4: 13s;
+  --transition-speed4: 2.2s;
 }
 
 .el1 { 
@@ -170,6 +176,58 @@
 .swing3:hover {
   animation-play-state: paused;
 }
+
+/*CHAD FREE*/
+
+.el4 { 
+  width: var(--width2);
+  height: var(--height2);
+}
+
+.x4 {
+  animation: x4 var(--x-speed4) linear infinite alternate;
+}
+.y4 {
+  animation: y4 var(--y-speed4) linear infinite alternate;
+}
+
+@keyframes x4 {
+  100% {
+    transform: translateX(calc(100vw - var(--width4)));
+  }
+}
+@keyframes y4 {
+  100% {
+    transform: translateY(calc(100vh - var(--height4)));
+  }
+}
+
+.swing4 {
+    animation: swing4 ease-in-out 2s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+
+    padding: 5px 5px 5px 5px;
+    background: linear-gradient(0deg, rgba(255,120,84,1) 0%, rgba(253,38,125,1) 100%);
+    color: white;
+    font-size: 2.4rem;
+}
+ 
+@keyframes swing4 {
+    0% { transform: rotate(4deg); }
+    100% { transform: rotate(-4deg); }
+}
+
+.x4:hover {
+  animation-play-state: paused;
+}
+.y4:hover {
+  animation-play-state: paused;
+}
+.swing4:hover {
+  animation-play-state: paused;
+}
+
 
 .footer {
    position: fixed;
